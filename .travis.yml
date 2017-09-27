@@ -22,7 +22,7 @@ env:
 before_install:
   - BOTGOTSTHIS_DIR=$HOME/BotGotsThis
   - git clone --depth 1 --branch $BOTGOTSTHIS_VER https://github.com/MeGotsThis/BotGotsThis.git $BOTGOTSTHIS_DIR
-  - git clone --depth 1 --branch $BOTGOTSTHIS_VER https://github.com/MeGotsThis/botgotsthis-multitwitch.git $BOTGOTSTHIS_DIR/pkg/multitwitch
+  - git clone --depth 1 https://github.com/MeGotsThis/botgotsthis-multitwitch.git $BOTGOTSTHIS_DIR/pkg/multitwitch
   - mv $TRAVIS_BUILD_DIR $BOTGOTSTHIS_DIR/pkg/$PKG_NAME
   - TRAVIS_BUILD_DIR=$BOTGOTSTHIS_DIR/pkg/$PKG_NAME
 install:
